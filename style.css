@@ -218,23 +218,20 @@ hr {
 }
 
 .slide {
-	opacity: 0;
+	display: none;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-	opacity: 1;
-	transition: 1s;
+	display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-	opacity: 1;
-	transition: 1s;
+	display: block;
 }
 
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-	opacity: 1;
-	transition: 1s;
+	display: block;
 }
 
 .btn {
