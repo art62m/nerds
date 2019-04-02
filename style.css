@@ -342,7 +342,7 @@ hr {
 .index-content-left-title {
 	margin: 0;
 	margin-top: 33px;
-	margin-bottom: 33px;
+	margin-bottom: 35px;
 	font-size: 45px;
 	line-height: 45px;
 	color: #000000;
@@ -437,44 +437,57 @@ hr {
 }
 
 .partners {
-	height: 180px;
-	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	font-size: 0;
 }
 
-.partners-item {
+.partners li {	
 	position: relative;
-	width: 260px;
-	height: 180px;
 	display: inline-block;
 	vertical-align: middle;
+	width: 260px;
+	text-align: center;	
 	margin-right: 40px;	
-	cursor: pointer;
+	cursor: pointer;	
 }
 
-.partners-item img{
-	display: inline;
-	opacity: 0.2;
+.partners a {
+	position: relative;
+	display: block;
+	
+	height: 95px;	
 }
 
-.partners-item img:hover {
+.partners img{
+	opacity: 0.2;	
+}
+
+.partners img:hover {
 	opacity: 1;
 }
 
-.partners-item img:active {
+.partners img:active {
 	opacity: 0.1;
 }
-
-.partners-item:last-child {
+.partners li:last-child {
 	margin-right: 0px;
 }
-
-.partners-item::before {
+.partners li::before {
 	position: absolute;
 	content: "";
 	width: 2px;
 	height: 52px;
 	left: 280px;
+	top: 19px;
 	background: #cccccc url("img/div.jpg") no-repeat;
+}
+
+.partners li:last-child::before {
+	content: "";
+	background: transparent;
 }
 
 
