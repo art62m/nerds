@@ -20,7 +20,7 @@
 					<ul>
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li><a href="#">Магазин</a></li>
+						<li class="active"><a>Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
@@ -37,6 +37,19 @@
 		<div class="shop-parameters">
 			<h2>Стоимость:</h2>
 			<form class="shop-parameters-form" action="#" method="get">
+				<fieldset>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale"><div class="bar" style="width:70%;"></div></div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" value="0"></label>
+							<label class="max-price">до <input  type="text" value="15000"></label>
+						</div>
+					</div>
+				</fieldset>
 				<fieldset>
 					<ul>
 						<legend>Сетка</legend>
@@ -79,6 +92,7 @@
 						</li>
 					</ul>
 				</fieldset>
+				<a class="btn " href="#">Показать</a>
 			</form>
 		</div>	
 		<div class="items">
@@ -91,59 +105,59 @@
 				<a href="#">По возрастанию</a>
 			</div>
 			<div class="item">
-				<img src="img/img-sedona.jpg" alt="sedona image">
+				<img src="img/img-sedona.jpg" alt="sedona image" width="360" height="576">
 				<div class="item-description">
 					<h3>Sedona</h3>
 					<p>Информационный сайт для туристов</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/img-pink.jpg" alt="pink image">
+				<img src="img/img-pink.jpg" alt="pink image" width="360" height="576">
 				<div class="item-description">
 					<h3>Pink app</h3>
 					<p>Продуктовый лендинг приложения iOS и Android</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/img-barbershop.jpg" alt="borodinski image">
+				<img src="img/img-barbershop.jpg" alt="borodinski image" width="360" height="576">
 				<div class="item-description">
 					<h3>Barbershop</h3>
 					<p>Сайт салона красоты. Для мужчин, да.</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/img-mishka.jpg" alt="mishka image">
+				<img src="img/img-mishka.jpg" alt="mishka image" width="360" height="576">
 				<div class="item-description">
 					<h3>Mishka</h3>
 					<p>Интернет-магазин вязаных игрушек</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/img-aplus.jpg" alt="a+ image">
+				<img src="img/img-aplus.jpg" alt="a+ image" width="360" height="576">
 				<div class="item-description">
 					<h3>A Plus</h3>
 					<p>Лендинг курсов повышения квалификации</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/img-kvast.jpg" alt="kvast image">
+				<img src="img/img-kvast.jpg" alt="kvast image" width="360" height="576">
 				<div class="item-description">
 					<h3>Кваст</h3>
 					<p>Промо-сайт производителя крафтового кваса</p>
-					<a href="#">9 900 руб.</a>
+					<a class="btn" href="#">9 900 руб.</a>
 				</div>
 			</div>
-			<div class="paginator">
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">Следующая</a>
-			</div>
+			<ul class="paginator">
+				<li class="active"><a class="btn numb">1</a></li>
+				<li><a class="btn numb" href="#">2</a></li>
+				<li><a class="btn numb" href="#">3</a></li>
+				<li><a class="btn" href="#">Следующая</a></li>
+			</ul>
 		</div>
 	</main>
 	<div class="map">
